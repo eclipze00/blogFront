@@ -1,30 +1,63 @@
-<div class="container-fluid">
-    <div class="row d-flex align-items-center">
-        <div class="col-md-6">
-            <div class="row d-flex justify-content-center">
-                <div class="col-md-6">
-                    <h1 class="text-center mb-3">Entrar</h1>
-                    <div class="form-group">
-                        <label for="usuario">Usuario</label>
-                        <input class="form-control" type="text" name="usuario" id="usuario" placeholder="email@email.com" [(ngModel)]="userLogin.usuario">
-                    </div>
+<section class="h-100 gradient-form"
+    style="background-image: url(../../assets/img/1920x1080-346623-Lunar-Eclipse-Digital-Art-Night-Scenery.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;">
 
-                    <div class="form-group">
-                        <label for="usuario">Senha</label>
-                        <input class="form-control" type="password" name="senha" id="senha" placeholder="Seu senha" [(ngModel)]="userLogin.senha">
-                    </div>
+  <div class="container py-5 h-100">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col-xl-10">
+        <div class="card rounded-3 text-black">
+          <div class="row g-0">
+            <div class="col-lg-6">
+              <div class="card-body p-md-5 mx-md-4">
 
-                    <div class="d-flex justify-content-center">
-                        <button type="submit" class="btn btn-success" (click)="logar()">Entrar</button>
-                    </div>
-
-                    <hr class="mt-5 mb-5">
-                    <p class="text-center">
-                        Não possui uma conta? <a routerLink="/cadastrar">Cadastre-se</a>
-                    </p>
+                <div class="text-center">
+                  <img src="../../assets/img/eclipze logo 1.png"
+                    style="width: 185px;" alt="logo">
+                  <h4 class="mt-1 mb-5 pb-1">Nós somos Lunares</h4>
                 </div>
+
+                <form>
+                  <p class="text1">Entre com sua conta</p>
+
+                  <div class="form-outline mb-4">
+                    <input type="email" class="form-control" name="usuario" id="usuario"
+                      placeholder="example@email.com" [(ngModel)]="userLogin.usuario" />
+                    <label class="form-label" for="usuario">Usuário</label>
+                  </div>
+
+                  <div class="form-outline mb-4">
+                    <input type="password" name="senha" id="senha" class="form-control" [(ngModel)]="userLogin.senha"/>
+                    <label class="form-label" for="senha">Senha</label>
+                  </div>
+
+                  <div class="text-center pt-1 mb-5 pb-1">
+                    <button class="btn btn-primary btn-block fa-lg gradient-custom-2 mb-3" type="button" (click)="logar()">Log in</button>
+                    <a class="text-muted" href="#!">Forgot password?</a>
+                  </div>
+
+                  <div class="d-flex align-items-center justify-content-center pb-4">
+                    <p class="mb-0 me-2">Não possui uma conta?</p>
+                    <button type="button" class="btnRegister btn btn-outline-info ml-3"><a routerLink="/cadastrar">Cadastre-se</a></button>
+                  </div>
+
+                </form>
+
+              </div>
             </div>
+            <div class="col-lg-6 d-flex align-items-center gradient-custom-2">
+              <div class="text-white px-3 py-4 p-md-5 mx-md-4">
+                <h4 class="mb-4">Venha fazer parte desta comunidade tambem 🌔</h4>
+                <p class="small mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                  incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                  ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="col-md-6" id="bgImg"></div>
+      </div>
     </div>
-</div>
+  </div>
+</section>
