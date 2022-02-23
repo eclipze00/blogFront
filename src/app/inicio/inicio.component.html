@@ -1,1 +1,100 @@
-<p>inicio works!</p>
+<div class="container-fluid">
+
+  <div class="row bg-secondary d-flex align-items-center">
+    <!--Left Side-->
+    <div class="col-md-6">
+
+      <div class="row d-flex justify-content-center">
+        <div class="col-md-6 text-white">
+          <h1 class="fs-54">Seja Bem-Vindo(a)</h1>
+          <h5 class="fs-18">Solta a voz!</h5>
+        </div>
+      </div>
+
+      <!--Buttons-->
+      <div class="row d-flex justify-content-center mt-3 m">
+        <div class="col-md-6">
+          <button class="btn btn-dark mr-3" data-toggle="modal" data-target="#novaPostagem">Nova Postagem</button>
+          <a class="btn btn-outline-dark" href="#postagens">Ver Postagens</a>
+        </div>
+      </div>
+      <!--Buttons-->
+
+    </div>
+    <!--/Left Side-->
+
+
+    <!--Right Side-->
+    <div class="col-md-6 d-flex justify-content-center">
+
+      <img src="../../assets/img/Writing on the wall-bro.png" alt="" width="500" height="500">
+
+    </div>
+    <!--/Right Side-->
+
+  </div>
+</div>
+
+<div class="container mb-5 mt-5" id="postagens">
+  <nav>
+    <div class="nav nav-tabs d-flex justify-content-center" id="nav-tab" role="tablist">
+      <a class="nav-link active text-secondary font-weight-bold" id="nav-home-tab" data-toggle="tab" href="#todasPostagens" role="tab" aria-controls="todasPostagens"
+        aria-selected="true">Todas as Postagens</a>
+      <a class="nav-link text-secondary font-weight-bold" id="nav-profile-tab" data-toggle="tab" href="#minhasPostagens" role="tab"
+        aria-controls="minhasPostagens" aria-selected="false">Minhas Postagens</a>
+      <a class="nav-link text-secondary font-weight-bold" id="nav-contact-tab" data-toggle="tab" href="#postagemTema" role="tab"
+        aria-controls="postagemTema" aria-selected="false">Postagem por Tema</a>
+    </div>
+  </nav>
+
+  <div class="tab-content" id="nav-tabContent">
+    <div class="tab-pane fade show active" id="todasPostagens" role="tabpanel" aria-labelledby="todasPostagens-tab">Todas as Postagens
+
+    </div>
+    <div class="tab-pane fade" id="minhasPostagens" role="tabpanel" aria-labelledby="minhasPostagens-tab">Minhas Postagens
+
+    </div>
+    <div class="tab-pane fade" id="postagemTema" role="tabpanel" aria-labelledby="postagemTema-tab">Postagem por Tema</div>
+  </div>
+</div>
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="novaPostagem" tabindex="-1" role="dialog"
+  aria-labelledby="TituloModalCentralizado" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="TituloModalCentralizado">Nova Postagem</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+
+        <div class="form-group">
+          <label for="titulo">Titulo</label>
+          <input type="text" class="form-control" id="titulo" placeholder="Digite o Titulo">
+        </div>
+
+        <div class="form-group">
+          <label for="titulo">Texto</label>
+          <textarea class="form-control" name="texto" id="texto" cols="" rows="3"></textarea>
+        </div>
+
+        <div class="form-group">
+          <label for="tema">Escolha um Tema ou <a data-dismiss="modal" routerLink="/tema">cadastre um novo:</a></label>
+          <select class="form-control" name="tema" id="tema">
+            <option value="">Temas</option>
+          </select>
+        </div>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Cancelar</button>
+        <button type="button" class="btn btn-success" >Publicar</button>
+      </div>
+    </div>
+  </div>
+</div>

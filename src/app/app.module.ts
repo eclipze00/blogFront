@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
+import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 
 
 import { AppComponent } from './app.component';
@@ -12,6 +13,7 @@ import { CadastrarComponent } from './cadastrar/cadastrar.component';
 import { FooterComponent } from './footer/footer.component';
 import { InicioComponent } from './inicio/inicio.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { TemaComponent } from './tema/tema.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,8 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     EntrarComponent,
     CadastrarComponent,
     FooterComponent,
-    InicioComponent
+    InicioComponent,
+    TemaComponent
   ],
   imports: [
     BrowserModule,
@@ -29,7 +32,10 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     FormsModule,
     FontAwesomeModule
   ],
-  providers: [],
+  providers: [{
+    useClass: HashLocationStrategy,
+    provide: LocationStrategy
+  }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

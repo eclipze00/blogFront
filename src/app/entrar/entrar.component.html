@@ -6,11 +6,13 @@
     background-attachment: fixed;">
 
   <div class="container py-5 h-100">
-    <div class="row d-flex justify-content-center align-items-center h-100">
-      <div class="col-xl-10">
-        <div class="card rounded-3 text-black">
+    <div class="row d-flex justify-content-center align-items-center h-100 ">
+      <div class="col-xl-10 shadow-lg ">
+        <div class="card rounded-3 text-white bg-dark">
           <div class="row g-0">
-            <div class="col-lg-6">
+
+            <!--Left Side-->
+            <div class="col-md-6">
               <div class="card-body p-md-5 mx-md-4">
 
                 <div class="text-center">
@@ -35,19 +37,22 @@
 
                   <div class="text-center pt-1 mb-5 pb-1">
                     <button class="btn btn-primary btn-block fa-lg gradient-custom-2 mb-3" type="button" (click)="logar()">Log in</button>
-                    <a class="text-muted" href="#!">Forgot password?</a>
+                    <a class="text-muted" href="#!">Esqueceu a Senha?</a>
                   </div>
 
-                  <div class="d-flex align-items-center justify-content-center pb-4">
+                  <div class="d-flex align-items-center justify-content-center pb-4 mr">
                     <p class="mb-0 me-2">Não possui uma conta?</p>
-                    <button type="button" class="btnRegister btn btn-outline-info ml-3"><a routerLink="/cadastrar">Cadastre-se</a></button>
+                    <a class="btn btn-outline-light ml-4" routerLink="/cadastrar">Cadastre-se</a>
                   </div>
 
                 </form>
 
               </div>
             </div>
-            <div class="col-lg-6 d-flex align-items-center gradient-custom-2">
+            <!--Left Side-->
+
+            <!--Right Side-->
+            <div class="col-lg-6 d-flex align-items-center gradient-custom-2 shadow-lg">
               <div class="text-white px-3 py-4 p-md-5 mx-md-4">
                 <h4 class="mb-4">Venha fazer parte desta comunidade tambem 🌔</h4>
                 <p class="small mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
@@ -55,6 +60,8 @@
                   ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
               </div>
             </div>
+            <!--Right Side-->
+
           </div>
         </div>
       </div>
