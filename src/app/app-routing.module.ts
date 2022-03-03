@@ -13,11 +13,15 @@ const routes: Routes = [
   {path:'entrar', component:EntrarComponent},
   {path:'cadastrar', component:CadastrarComponent},
   {path:'inicio', component:InicioComponent},
+<<<<<<< HEAD
   { path: 'tema', component: TemaComponent },
 
   { path: 'tema-edit/:id', component: TemaEditComponent },
   { path: 'tema-delete/:id', component: TemaDeleteComponent },
 
+=======
+  {path:'tema', component:TemaComponent}
+>>>>>>> main
 
 ];
 
