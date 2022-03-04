@@ -14,11 +14,9 @@ import { FooterComponent } from './footer/footer.component';
 import { InicioComponent } from './inicio/inicio.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { TemaComponent } from './tema/tema.component';
-<<<<<<< HEAD
+
 import { TemaEditComponent } from './edit/tema-edit/tema-edit.component';
 import { TemaDeleteComponent } from './delete/tema-delete/tema-delete.component';
-=======
->>>>>>> main
 
 @NgModule({
   declarations: [
@@ -28,13 +26,12 @@ import { TemaDeleteComponent } from './delete/tema-delete/tema-delete.component'
     CadastrarComponent,
     FooterComponent,
     InicioComponent,
-<<<<<<< HEAD
+
     TemaComponent,
     TemaEditComponent,
-    TemaDeleteComponent
-=======
-    TemaComponent
->>>>>>> main
+    TemaDeleteComponent,
+
+
   ],
   imports: [
     BrowserModule,
