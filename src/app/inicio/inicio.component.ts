@@ -38,8 +38,10 @@ export class InicioComponent implements OnInit {
       this.router.navigate(['/entrar'])
     }
 
-    this.getAllTemas()
-    this.getAllPostagens()
+    this.authService.refreshToken();
+    this.getAllTemas();
+    this.getAllPostagens();
+
   }
 
   getAllTemas() {
@@ -61,7 +63,7 @@ export class InicioComponent implements OnInit {
   }
 
   findByIdUsuario() {
-    this.authService.getByIdUser(this.idUsuario).subscribe((resp: Usuario) => {
+    this.authService.getByIdUsuario(this.idUsuario).subscribe((resp: Usuario) => {
       this.usuario = resp
     })
   }
